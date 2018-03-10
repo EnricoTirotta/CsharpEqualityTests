@@ -12,6 +12,20 @@ namespace EqualityTests.Tests.WithoutOverride
         PersonNoOverride _globalPerson = new PersonNoOverride { FirstName = "Enrico", LastName = "Tirotta" };
 
         [Fact]
+        public void LINQDistinctSuccess()
+        {
+            PersonNoOverride _localPerson = new PersonNoOverride { FirstName = "Enrico", LastName = "Tirotta" };
+
+            people.Add(_globalPerson);
+            people.Add(_localPerson);
+
+            int numberDistinctPeople = people.Distinct().Count();
+
+            Assert.Equal(1, numberDistinctPeople);
+            //Expected 1, but test fails because result is 2
+        }
+
+        [Fact]
         public void LINQAnySuccess()
         {
             people.Add(_globalPerson);
@@ -33,18 +47,5 @@ namespace EqualityTests.Tests.WithoutOverride
 
         }
 
-        [Fact]
-        public void LINQDistinctSuccess()
-        {
-            PersonNoOverride _localPerson = new PersonNoOverride { FirstName = "Enrico", LastName = "Tirotta" };
-
-            people.Add(_globalPerson);
-            people.Add(_localPerson);
-
-            int numberDistinctPeople = people.Distinct().Count();
-
-            Assert.Equal(1, numberDistinctPeople);
-            //Expected 1, but test fails because result is 2
-        }
     }
 }

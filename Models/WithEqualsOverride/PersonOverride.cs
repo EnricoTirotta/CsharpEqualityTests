@@ -20,10 +20,23 @@ namespace EqualityTests.Models.WithEqualsOverride
             if (this.GetType() != obj.GetType())
                 return false;
 
-            PersonOverride id = (PersonOverride)obj;
+            PersonOverride _localP= (PersonOverride)obj;
 
-            return FirstName == id.FirstName && LastName == id.LastName;
+            return FirstName == _localP.FirstName && LastName == _localP.LastName;
         }
+
+        public bool Equals(PersonOverride p)
+        {
+            if (p == null)
+                return false;
+
+            //Same object
+            if (ReferenceEquals(this, p))
+                return true;
+
+            return FirstName == p.FirstName && LastName == p.LastName;
+        }
+
 
         public override int GetHashCode()
         {
