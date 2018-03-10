@@ -15,6 +15,5 @@ namespace EqualityTests.Tests.WithoutOverride
             Assert.True(_globalPerson1.Equals(_globalPerson2));
             //Expected TRUE, but test fails
         }
-
     }
 }

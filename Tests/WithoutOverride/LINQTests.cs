@@ -9,7 +9,6 @@ namespace EqualityTests.Tests.WithoutOverride
     public class LINQTests
     {
         List<PersonNoOverride> people = new List<PersonNoOverride>();
-        Identification _globalID = new Identification { email = "mail@mail.com", Phone = "123456" };
         PersonNoOverride _globalPerson = new PersonNoOverride { FirstName = "Enrico", LastName = "Tirotta" };
 
         [Fact]
