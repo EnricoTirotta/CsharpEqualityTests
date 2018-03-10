@@ -6,8 +6,8 @@ namespace EqualityTests.Tests.WithEqualsOverride
 
     /// <summary>
     /// TESTS 
-    /// <para>With EQUALS and HASHCODE override.</para>
-    /// <para>Without == and != override</para>
+    /// <para>With EQUALS and HASHCODE overrides</para>
+    /// <para>Without == and != overrides</para>
     /// </summary>
     public class EqualsTests
     {
@@ -39,7 +39,7 @@ namespace EqualityTests.Tests.WithEqualsOverride
         {
             Assert.True(_globalPerson1 == _globalPerson2);
             //Expected TRUE, but test fails. No Operator == override
-            //Default == operator checks reference equals
+            //Default == operator checks reference equality
         }
 
 

@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 namespace EqualityTests.Models.WithEqualsOverride
 {
     public class PersonOverride
@@ -8,21 +8,23 @@ namespace EqualityTests.Models.WithEqualsOverride
 
         public override bool Equals(object obj)
         {
-            //null
-            if (obj == null)
-                return false;
+            //1- Guard against null  
+            if (obj == null)  
+                return false;  
+  
+            //2 - Check reference equality 
+            if (ReferenceEquals(this, obj))  
+                return true;  
+  
+            //3 - Check type
+            if (this.GetType() != obj.GetType())  
+                return false;  
+  
+            PersonOverride _localP = (PersonOverride)obj;  
 
-            //Same object
-            if (ReferenceEquals(this, obj))
-                return true;
-
-            //Different type
-            if (this.GetType() != obj.GetType())
-                return false;
-
-            PersonOverride _localP= (PersonOverride)obj;
-
-            return FirstName == _localP.FirstName && LastName == _localP.LastName;
+            //4 - define your behavior
+            return FirstName == _localP.FirstName 
+                   && LastName == _localP.LastName; 
         }
 
         public bool Equals(PersonOverride p)
