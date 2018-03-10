@@ -41,7 +41,6 @@ namespace EqualityTests.Models.WithEqualsOverride
             {
                 if (!IsTransient())
                 {
-                    //Your hashcode algorithm here
                     var hash = 17;
                     hash = hash * 23 + Id.GetHashCode();
                     return hash;

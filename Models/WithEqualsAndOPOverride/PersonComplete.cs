@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 namespace EqualityTests.Models.WithEqualsAndOPOverride
 {
     public class PersonComplete
@@ -8,21 +8,23 @@ namespace EqualityTests.Models.WithEqualsAndOPOverride
 
         public override bool Equals(object obj)
         {
-            //null
-            if (obj == null)
-                return false;
+            //1- Guard against null  
+            if (obj == null)  
+                return false;  
+  
+            //2 - Check reference equality 
+            if (ReferenceEquals(this, obj))  
+                return true;  
+  
+            //3 - Check type
+            if (this.GetType() != obj.GetType())  
+                return false;  
 
-            //Same object
-            if (ReferenceEquals(this, obj))
-                return true;
+            //4 - Casting
+            PersonComplete _localP = (PersonComplete)obj;
 
-            //Different type
-            if (this.GetType() != obj.GetType())
-                return false;
-
-            PersonComplete id = (PersonComplete)obj;
-
-            return FirstName == id.FirstName && LastName == id.LastName;
+            //5 - Custom equality behaviour
+            return FirstName == _localP.FirstName && LastName == _localP.LastName;
         }
 
         public static bool operator ==(PersonComplete a, PersonComplete b)
@@ -32,7 +34,7 @@ namespace EqualityTests.Models.WithEqualsAndOPOverride
                 return true;
 
             //Call == op in OBJECT class with (object) casting. 
-            //Avoid a==null or b==null: the Language Runtime calls the overload version
+            //Avoid a==null or b==null: the CLR calls the overload version
             //to causing an infinite loop.
             if (((object)a == null) || ((object)b == null))
                 return false;

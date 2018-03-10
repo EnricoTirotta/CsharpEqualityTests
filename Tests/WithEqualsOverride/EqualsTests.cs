@@ -41,7 +41,5 @@ namespace EqualityTests.Tests.WithEqualsOverride
             //Expected TRUE, but test fails. No Operator == override
             //Default == operator checks reference equality
         }
-
-
     }
 }

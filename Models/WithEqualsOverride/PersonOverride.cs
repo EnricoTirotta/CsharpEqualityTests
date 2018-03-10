@@ -20,9 +20,10 @@ namespace EqualityTests.Models.WithEqualsOverride
             if (this.GetType() != obj.GetType())  
                 return false;  
   
+            //4 - Casting
             PersonOverride _localP = (PersonOverride)obj;  
 
-            //4 - define your behavior
+            //5 - Custom equality behavior
             return FirstName == _localP.FirstName 
                    && LastName == _localP.LastName; 
         }
