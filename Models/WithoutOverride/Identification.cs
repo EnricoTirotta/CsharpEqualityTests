@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 namespace EqualityTests.Models.WithoutOverride
 {
     public class Identification
