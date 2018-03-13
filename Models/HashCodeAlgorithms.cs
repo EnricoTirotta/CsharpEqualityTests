@@ -35,7 +35,7 @@ namespace EqualityTests.Models
             }
         }
 
-        public int XorHash2()
+        public int XorWithPrimeNumber()
         {
             return Id.GetHashCode() ^ 41;
         }
