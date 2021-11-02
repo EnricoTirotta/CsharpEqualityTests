@@ -1,0 +1,14 @@
+/Users/enricotirotta/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/net Core/EqualityTests/EqualityTests/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/enricotirotta/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/net Core/EqualityTests/EqualityTests/bin/Debug/netcoreapp2.0/xunit.runner.utility.netstandard15.dll
+/Users/enricotirotta/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/net Core/EqualityTests/EqualityTests/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netstandard15.dll
+/Users/enricotirotta/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/net Core/EqualityTests/EqualityTests/bin/Debug/netcoreapp2.0/EqualityTests.deps.json
+/Users/enricotirotta/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/net Core/EqualityTests/EqualityTests/bin/Debug/netcoreapp2.0/EqualityTests.runtimeconfig.json
+/Users/enricotirotta/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/net Core/EqualityTests/EqualityTests/bin/Debug/netcoreapp2.0/EqualityTests.runtimeconfig.dev.json
+/Users/enricotirotta/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/net Core/EqualityTests/EqualityTests/bin/Debug/netcoreapp2.0/EqualityTests.dll
+/Users/enricotirotta/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/net Core/EqualityTests/EqualityTests/bin/Debug/netcoreapp2.0/EqualityTests.pdb
+/Users/enricotirotta/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/net Core/EqualityTests/EqualityTests/obj/Debug/netcoreapp2.0/EqualityTests.csprojResolveAssemblyReference.cache
+/Users/enricotirotta/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/net Core/EqualityTests/EqualityTests/obj/Debug/netcoreapp2.0/EqualityTests.csproj.CoreCompileInputs.cache
+/Users/enricotirotta/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/net Core/EqualityTests/EqualityTests/obj/Debug/netcoreapp2.0/EqualityTests.AssemblyInfoInputs.cache
+/Users/enricotirotta/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/net Core/EqualityTests/EqualityTests/obj/Debug/netcoreapp2.0/EqualityTests.AssemblyInfo.cs
+/Users/enricotirotta/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/net Core/EqualityTests/EqualityTests/obj/Debug/netcoreapp2.0/EqualityTests.dll
+/Users/enricotirotta/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/net Core/EqualityTests/EqualityTests/obj/Debug/netcoreapp2.0/EqualityTests.pdb
